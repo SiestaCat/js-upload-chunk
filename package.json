@@ -1,0 +1,45 @@
+{
+  "name": "upload-chunk",
+  "version": "1.0.0",
+  "description": "Upload chunk",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.test.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiestaCat/js-upload-chunk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SiestaCat/js-upload-chunk/issues"
+  },
+  "homepage": "https://github.com/SiestaCat/js-upload-chunk#readme",
+  "keywords": [
+    "upload",
+    "chunk",
+    "front"
+  ],
+  "author": "Marco iosif Constantinescu <marco.isfc@gmail.com>",
+  "license": "MIT",
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": false,
+    "commitLimit": false,
+    "backfillLimit": false,
+    "hideCredit": true
+  },
+  "publishConfig": {
+    "ignore": [
+      ".github/workflows"
+    ]
+  },
+  "dependencies": {
+    "crypto-random-string": "^5.0.0",
+    "jquery": "^3.7.1"
+  }
+}
