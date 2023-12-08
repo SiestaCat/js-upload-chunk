@@ -8,6 +8,12 @@ const parse_json = function(response, callback)
         return;
     }
 
+    if(response_json.hasOwnProperty('responseText'))
+    {
+        callback(true, false, response, null);
+        return;
+    }
+
     if(!(response_json.hasOwnProperty('success') && response_json.success === true))
     {
         callback(true, true, response_json, (response_json.hasOwnProperty('error') ? response_json.error : null));
