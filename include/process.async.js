@@ -117,4 +117,4 @@ class ChunkUploadProcessAsync
 const $ = require('jquery');
 const response_helper = require('./response.helper.js');
 
-module.exports = ChunkUploadProcess;
+module.exports = ChunkUploadProcessAsync;
